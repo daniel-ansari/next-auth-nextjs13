@@ -11,6 +11,7 @@ export default function Layout({ children }: LayoutProps) {
   const router = useRouter();
   const isLoginPage = router.pathname === '/auth/login';
   const isRegisterPage = router.pathname === '/auth/register';
+  const errorPage = router.pathname === '/auth/error';
 
   if (isLoginPage || isRegisterPage) {
     return (
@@ -26,6 +27,9 @@ export default function Layout({ children }: LayoutProps) {
       </main>
     )
   }
+
+  if (errorPage)
+    return <>{children}</>
 
   return (
     <>

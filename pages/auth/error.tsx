@@ -1,20 +1,26 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 
 const Error: NextPage = () => {
   return (
-    <div className="pb-0 pt-0 h-full min-h-screen items-start p-0 relative overflow-hidden flex bg-cover bg-center bg-[url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-basic.jpg')]">
-      <div className="container">
-        <div className="flex flex-wrap justify-center mt-48 -mx-3 lg:mt-48 md:mt-56">
-          <div className="w-full max-w-full px-6 mx-auto shrink-0 md:flex-0 md:w-7/12 lg:w-5/12 xl:w-4/12">
-            <div className="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-xl lg:pb-4 dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
-              <div className="text-center border-black/12.5 rounded-t-2xl border-b-0 border-solid p-6">
-                <h5>Oops!</h5>
-              </div>
-            </div>
-          </div>
-        </div>
+    <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
+      <h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
+      <div className="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
+        Page Not Found
       </div>
-    </div>
+      <button className="mt-5">
+        <a
+          className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
+        >
+          <span
+            className="absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-[#FF6A3D] group-hover:translate-y-0 group-hover:translate-x-0"
+          ></span>
+          <span className="relative block px-8 py-3 bg-[#1A2238] border border-current">
+            <Link href="/">Go Home</Link>
+          </span>
+        </a>
+      </button>
+    </main>
   )
 }
 
