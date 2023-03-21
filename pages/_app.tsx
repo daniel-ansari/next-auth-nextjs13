@@ -10,11 +10,11 @@ const MyApp: React.FC<AppProps> = ({
   pageProps: { session, ...pageProps },
 }) => {
   return (
-    <Layout>
-      <SessionProvider session={session} refetchInterval={0} >
+    <SessionProvider session={session} refetchInterval={0} >
+      <Layout>
         <Component {...pageProps} />
-      </SessionProvider>
-    </Layout >
+      </Layout >
+    </SessionProvider>
   );
 };
 
