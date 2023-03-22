@@ -3,7 +3,6 @@ import { useState } from "react";
 import { signIn, useSession, getSession } from "next-auth/react"
 import { useRouter } from 'next/router';
 import FacebookBtn from '../../components/facebook-btn'
-import AppleBtn from '../../components/apple-btn'
 import GoogleBtn from '../../components/google-btn'
 
 export default function Login() {
@@ -40,9 +39,6 @@ export default function Login() {
         <div className="my-20"><h2 className="text-lg font-semibold text-gray-900">Sign in to your account</h2><p className="mt-2 text-sm text-gray-700">Don’t have an account?<a className="font-medium text-blue-600 hover:underline" href="/auth/register">Sign up</a> for a free trial.</p></div>
         <div className="px-1 ml-auto flex-0">
           <FacebookBtn />
-        </div>
-        <div className="px-1 flex-0">
-          <AppleBtn />
         </div>
         <div className="px-1 mr-auto flex-0">
           <GoogleBtn />

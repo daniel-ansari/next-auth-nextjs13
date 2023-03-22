@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import type { NextPage } from 'next'
 import FacebookBtn from '../../components/facebook-btn'
-import AppleBtn from '../../components/apple-btn'
 import GoogleBtn from '../../components/google-btn'
 
 const Register: NextPage = () => {
@@ -37,9 +36,6 @@ const Register: NextPage = () => {
         </div>
         <div className="px-1 ml-auto flex-0">
           <FacebookBtn />
-        </div>
-        <div className="px-1 flex-0">
-          <AppleBtn />
         </div>
         <div className="px-1 mr-auto flex-0">
           <GoogleBtn />
